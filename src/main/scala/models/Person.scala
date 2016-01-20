@@ -50,10 +50,15 @@ object Person extends SolrModel with AttributeParams {
                newsfeeds              = newsfeeds,
                attributes             = parseAttributes(personData, List('type,'label,'title)))
   }
+
+  def defaultDate(): Date = {
+    // use the start of epoch for the default date
+    return new Date(0);
+  }
 }
 
 case class Person(uri:String,
-                  updatedAt:Date,
+                  updatedAt:Date=Person.defaultDate(),
                   vivoType:String,
                   label:String,
                   title:String,
@@ -88,7 +93,7 @@ case class Person(uri:String,
     researchAreas.foldLeft(List[String]()) {(u,area) => u ++ area.uris} ++
     webpages.foldLeft(List[String]()) {(u,page) => u ++ page.uris} ++
     geographicalFocus.foldLeft(List[String]()) {(u,focus) => u ++ focus.uris} ++
-    newsfeeds.foldLeft(List[String]()) {(u,newsfeed) => u ++ newsfeed.uris} 
+    newsfeeds.foldLeft(List[String]()) {(u,newsfeed) => u ++ newsfeed.uris}
   }
 
   def personAttributes() = {
