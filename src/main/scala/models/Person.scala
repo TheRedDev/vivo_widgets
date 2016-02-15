@@ -15,7 +15,7 @@ object Person extends SolrModel with AttributeParams {
   }
 
   def build(uri:String,
-            updatedAt:Date,
+            updatedAt:Option[Date],
             personData:Map[Symbol,String],
             pubs:List[Publication],
             awards:List[Award],
@@ -51,14 +51,12 @@ object Person extends SolrModel with AttributeParams {
                attributes             = parseAttributes(personData, List('type,'label,'title)))
   }
 
-  def defaultDate(): Date = {
-    // use the start of epoch for the default date
-    return new Date(0);
-  }
 }
 
+// TODO: 
+// 1. updatedAt as [Option] 
 case class Person(uri:String,
-                  updatedAt:Date=Person.defaultDate(),
+                  updatedAt:Option[Date],
                   vivoType:String,
                   label:String,
                   title:String,
