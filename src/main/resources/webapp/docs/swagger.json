@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "version": "1.0.0",
+    "version": "0.9.0",
     "title": "Swagger for Vivo Widgets",
     "description": "Vivo widgets API in the swagger-2.0 specification"
   },
@@ -18,8 +18,6 @@
          { "$ref": "#/parameters/countParam" },
          { "$ref": "#/parameters/formatParam" },
          { "$ref": "#/parameters/uriParam" },
-         { "$ref": "#/parameters/formattingParam" },
-         { "$ref": "#/parameters/styleParam" },
          { "$ref": "#/parameters/startParam" },
          { "$ref": "#/parameters/endParam" }
        ],
@@ -41,10 +39,8 @@
        "description": "Returns a person's publications",
        "parameters": [
          { "$ref": "#/parameters/countParam" },
-         { "$ref": "#/parameters/formatParam" },
+         { "$ref": "#/parameters/formatParamExt" },
          { "$ref": "#/parameters/uriParam" },
-         { "$ref": "#/parameters/formattingParam" },
-         { "$ref": "#/parameters/styleParam" },
          { "$ref": "#/parameters/startParam" },
          { "$ref": "#/parameters/endParam" }
        ],
@@ -69,10 +65,8 @@
        "description": "Returns a person's artistic works",
        "parameters": [
          { "$ref": "#/parameters/countParam" },
-         { "$ref": "#/parameters/formatParam" },
+         { "$ref": "#/parameters/formatParamExt" },
          { "$ref": "#/parameters/uriParam" },
-         { "$ref": "#/parameters/formattingParam" },
-         { "$ref": "#/parameters/styleParam" },
          { "$ref": "#/parameters/startParam" },
          { "$ref": "#/parameters/endParam" }
        ],  
@@ -97,10 +91,8 @@
        "description": "Returns a person's awards",
        "parameters": [
          { "$ref": "#/parameters/countParam" },
-         { "$ref": "#/parameters/formatParam" },
+         { "$ref": "#/parameters/formatParamExt" },
          { "$ref": "#/parameters/uriParam" },
-         { "$ref": "#/parameters/formattingParam" },
-         { "$ref": "#/parameters/styleParam" },
          { "$ref": "#/parameters/startParam" },
          { "$ref": "#/parameters/endParam" }
        ],
@@ -125,10 +117,8 @@
        "description": "Returns a person's grants",
        "parameters": [
          { "$ref": "#/parameters/countParam" },
-         { "$ref": "#/parameters/formatParam" },
+         { "$ref": "#/parameters/formatParamExt" },
          { "$ref": "#/parameters/uriParam" },
-         { "$ref": "#/parameters/formattingParam" },
-         { "$ref": "#/parameters/styleParam" },
          { "$ref": "#/parameters/startParam" },
          { "$ref": "#/parameters/endParam" }
        ],
@@ -153,10 +143,8 @@
        "description": "Returns a person's courses",
        "parameters": [
          { "$ref": "#/parameters/countParam" },
-         { "$ref": "#/parameters/formatParam" },
+         { "$ref": "#/parameters/formatParamExt" },
          { "$ref": "#/parameters/uriParam" },
-         { "$ref": "#/parameters/formattingParam" },
-         { "$ref": "#/parameters/styleParam" },
          { "$ref": "#/parameters/startParam" },
          { "$ref": "#/parameters/endParam" }
        ],
@@ -181,10 +169,8 @@
        "description": "Returns a person's newsfeeds",
        "parameters": [
          { "$ref": "#/parameters/countParam" },
-         { "$ref": "#/parameters/formatParam" },
+         { "$ref": "#/parameters/formatParamExt" },
          { "$ref": "#/parameters/uriParam" },
-         { "$ref": "#/parameters/formattingParam" },
-         { "$ref": "#/parameters/styleParam" },
          { "$ref": "#/parameters/startParam" },
          { "$ref": "#/parameters/endParam" }
        ],
@@ -209,10 +195,8 @@
        "description": "Returns a person's professional activities",
        "parameters": [
          { "$ref": "#/parameters/countParam" },
-         { "$ref": "#/parameters/formatParam" },
+         { "$ref": "#/parameters/formatParamExt" },
          { "$ref": "#/parameters/uriParam" },
-         { "$ref": "#/parameters/formattingParam" },
-         { "$ref": "#/parameters/styleParam" },
          { "$ref": "#/parameters/startParam" },
          { "$ref": "#/parameters/endParam" }
        ],
@@ -237,10 +221,8 @@
        "description": "Returns a person's positions",
        "parameters": [
          { "$ref": "#/parameters/countParam" },
-         { "$ref": "#/parameters/formatParam" },
+         { "$ref": "#/parameters/formatParamExt" },
          { "$ref": "#/parameters/uriParam" },
-         { "$ref": "#/parameters/formattingParam" },
-         { "$ref": "#/parameters/styleParam" },
          { "$ref": "#/parameters/startParam" },
          { "$ref": "#/parameters/endParam" }
        ],
@@ -265,10 +247,8 @@
        "description": "Returns a person's addresses",
        "parameters": [
          { "$ref": "#/parameters/countParam" },
-         { "$ref": "#/parameters/formatParam" },
+         { "$ref": "#/parameters/formatParamExt" },
          { "$ref": "#/parameters/uriParam" },
-         { "$ref": "#/parameters/formattingParam" },
-         { "$ref": "#/parameters/styleParam" },
          { "$ref": "#/parameters/startParam" },
          { "$ref": "#/parameters/endParam" }
        ],
@@ -293,10 +273,8 @@
        "description": "Returns a person's overview",
        "parameters": [
          { "$ref": "#/parameters/countParam" },
-         { "$ref": "#/parameters/formatParam" },
+         { "$ref": "#/parameters/formatParamExt" },
          { "$ref": "#/parameters/uriParam" },
-         { "$ref": "#/parameters/formattingParam" },
-         { "$ref": "#/parameters/styleParam" },
          { "$ref": "#/parameters/startParam" },
          { "$ref": "#/parameters/endParam" }
        ],
@@ -321,10 +299,8 @@
        "description": "Returns a person's contact information",
        "parameters": [
          { "$ref": "#/parameters/countParam" },
-         { "$ref": "#/parameters/formatParam" },
+         { "$ref": "#/parameters/formatParamExt" },
          { "$ref": "#/parameters/uriParam" },
-         { "$ref": "#/parameters/formattingParam" },
-         { "$ref": "#/parameters/styleParam" },
          { "$ref": "#/parameters/startParam" },
          { "$ref": "#/parameters/endParam" }
        ],
@@ -350,9 +326,7 @@
        "parameters": [
          { "$ref": "#/parameters/countParam" },
          { "$ref": "#/parameters/formatParam" },
-         { "$ref": "#/parameters/uriParam" },
-         { "$ref": "#/parameters/formattingParam" },
-         { "$ref": "#/parameters/styleParam" }
+         { "$ref": "#/parameters/uriParam" }
        ],
        "responses": {
           "200": {
@@ -376,9 +350,7 @@
        "parameters": [
          { "$ref": "#/parameters/countParam" },
          { "$ref": "#/parameters/formatParam" },
-         { "$ref": "#/parameters/uriParam" },
-         { "$ref": "#/parameters/formattingParam" },
-         { "$ref": "#/parameters/styleParam" }
+         { "$ref": "#/parameters/uriParam" }
        ],
        "responses": {
           "200": {
@@ -431,32 +403,6 @@
  
      }
    }
-  },
-  "/search.{format}": { 
-    "get": { 
-      "parameters": [
-         {
-           "name": "query",
-           "in": "query",
-           "type": "string",
-           "description": "what to search for"
-         },
-         {
-           "name": "format",
-           "in": "path",
-            "enum": ["json"],
-            "description": "format is requested by *.ext - but the only returned format is 'json' at the moment"
-         }
-     ]
-    },
-    "responses": {
-       "200": {
-         "description": "Expected response to a valid request"
-       },
-       "400": {
-         "description": "Bad Response.  Returned if date cannot be parsed"
-      }
-    }
   }
  },
  "parameters": {
@@ -469,15 +415,23 @@
     },
     "formatParam": {
        "name": "format",
-       "description": "In what format to return results ('js' and 'html' redirect however)",
+       "description": "In what format to return results ('js' and 'html' are valid, but redirect)",
        "enum": ["json", "jsonp"],
-       "required": true
+       "required": true,
+       "in": "path"
+    },
+    "formatParamExt": {
+       "name": "format",
+       "description": "In what format to return results",
+       "enum": ["json", "jsonp", "html", "js"],
+       "required": true,
+       "in": "path"
     },
     "uriParam": {
        "name": "uri",
        "in": "query",
        "required": true,
-       "description": "which URI to look at.  If missing will return 'key not found: uri'"
+       "description": "which URI to look at.  If missing will return 'key not found: uri'.  This can be simply a duid (e.g. Duke Unique Identifier - 7 digits)."
     },
     "formattingParam": {
        "name": "formatting",
