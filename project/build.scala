@@ -9,7 +9,7 @@ object VivowidgetsBuild extends Build {
   val Organization = "duke"
   val Name = "VivoWidgets"
   val Version = "0.3.0"
-  val ScalaVersion = "2.10.1"
+  val ScalaVersion = "2.10.3"
   val ScalatraVersion = "2.2.1"
 
   lazy val project = Project (
